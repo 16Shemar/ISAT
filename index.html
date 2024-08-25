@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Computer Hardware Store</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -24,66 +26,67 @@
 
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>We are a local store specializing in both internal and external computer components. Whether you need a new CPU, RAM, or external peripherals like keyboards and monitors, we've got you covered.</p>
+        <p>We are a local store specializing in both internal and external computer components. Whether you need a new
+            CPU, RAM, or external peripherals like keyboards and monitors, we've got you covered.</p>
     </section>
 
     <section id="items" class="items">
         <h2>Items for Sale</h2>
-       <div class="first-row-items">
-        <div class="item" data-price="500">
-            <p>External Mouse</p>
-            <p>R500</p>
-            <button onclick="addToCart(500)">Add to Cart</button>
-        </div>
-        <div class="item" data-price="R900">
-            <p>Monitor</p>
-            <p>R900</p>
-            <button onclick="addToCart(900)">Add to Cart</button>
-        </div>
+        <div class="first-row-items">
+            <div class="item" data-price="500">
+                <p>External Mouse</p>
+                <p>R500</p>
+                <button onclick="addToCart(500)" class="btn">Add to Cart</button>
+            </div>
+            <div class="item" data-price="R900">
+                <p>Monitor</p>
+                <p>R900</p>
+                <button onclick="addToCart(900)" class="btn">Add to Cart</button>
+            </div>
 
-        <div class="item" data-price="1500">
-            <p>Internal CPU</p>
-            <p>R1500</p>
-            <button onclick="addToCart(1500)">Add to Cart</button>
-        </div>
+            <div class="item" data-price="1500">
+                <p>Internal CPU</p>
+                <p>R1500</p>
+                <button onclick="addToCart(1500)" class="btn">Add to Cart</button>
+            </div>
 
-        <div class="item" data-price="1500">
-            <p>Internal CPU</p>
-            <p>R1500</p>
-            <button onclick="addToCart(1500)">Add to Cart</button>
+            <div class="item" data-price="1500">
+                <p>Internal CPU</p>
+                <p>R1500</p>
+                <button onclick="addToCart(1500)" class="btn">Add to Cart</button>
+            </div>
         </div>
-       </div>
-       <div class="second-row-items">
-        <div class="item" data-price="500">
-            <p>Keyboard</p>
-            <p>R500</p>
-            <button onclick="addToCart(2500)">Add to Cart</button>
-        </div>
-        <div class="item" data-price="2500">
-            <p>Power Supply</p>
-            <p>R2500</p>
-            <button onclick="addToCart(2500)">Add to Cart</button>
-        </div>
+        <div class="second-row-items">
+            <div class="item" data-price="500">
+                <p>Keyboard</p>
+                <p>R500</p>
+                <button onclick="addToCart(2500)" class="btn">Add to Cart</button>
+            </div>
+            <div class="item" data-price="2500">
+                <p>Power Supply</p>
+                <p>R2500</p>
+                <button onclick="addToCart(2500)" class="btn">Add to Cart</button>
+            </div>
 
-        <div class="item" data-price="3000">
-            <p>Motherboard</p>
-            <p>R3000</p>
-            <button onclick="addToCart(3000)">Add to Cart</button>
-        </div>
+            <div class="item" data-price="3000">
+                <p>Motherboard</p>
+                <p>R3000</p>
+                <button onclick="addToCart(3000)" class="btn">Add to Cart</button>
+            </div>
 
-        <div class="item" data-price="1500">
-            <p>Internal Hard Drive</p>
-            <p>R1500</p>
-            <button onclick="addToCart(1500)">Add to Cart</button>
+            <div class="item" data-price="1500">
+                <p>Internal Hard Drive</p>
+                <p>R1500</p>
+                <button onclick="addToCart(1500)" class="btn">Add to Cart</button>
+            </div>
         </div>
-       </div>
         <!-- Add more items as needed -->
-        
+
         <div id="cart">
             <h3>Your Cart</h3>
             <ul id="cartItems"></ul>
             <p>Total: R<span id="totalPrice">0</span></p>
-            <button onclick="refreshCart()">Refresh Cart</button>
+            <button onclick="refreshCart()" class="btn">Refresh Cart</button>
         </div>
     </section>
 
@@ -94,9 +97,10 @@
             <p>Email: khayelitshacompstore@gmail.com</p>
         </div>
         <p>&copy; 2024 Local Computer Hardware Store</p>
-        
+
     </footer>
 
     <script src="JS/script.js"></script>
 </body>
+
 </html>
